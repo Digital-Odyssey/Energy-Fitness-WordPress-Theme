@@ -1,0 +1,252 @@
+/* Rounded button */
+.pm-rounded-btn {
+	width:auto;
+	height:auto;	
+	display:inline;
+	background-color:$secondaryColor;
+	min-width:100px;
+	display:inline-block;
+	padding:10px 30px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-family:'Open sans';
+	font-size:14px;
+	font-weight:bold;
+	color:white !important;
+	margin:15px 0px;
+	text-align:center;
+	text-decoration:none !important;
+	
+	@include borderRadiusAll(99px);
+	@include transition(all, 0.4s);
+
+}
+
+.pm-rounded-btn.animated {
+	padding:10px 20px 10px 30px;	
+}
+
+.pm-rounded-btn:hover {
+	color:white !important;
+	background-color:$primaryColor;
+}
+
+.pm-rounded-btn.submit {
+	border:0px solid white;	
+	margin-top:10px;
+}
+
+.pm-rounded-btn.tag {
+	margin:1px;	
+}
+
+.pm-rounded-btn.expand {
+	padding:7px 0px !important;
+	min-width:40px !important;
+}
+
+.pm-rounded-btn.small {
+	padding:7px 17px;	
+}
+
+.pm-rounded-btn.pm-primary {
+	background-color:#EF5438;
+}
+
+.pm-rounded-btn.pm-secondary {
+	background-color:#44619d;
+}
+
+.pm-rounded-btn.transparent:hover {
+	color:white;
+	background-color:#333;
+}
+
+.pm-rounded-btn.transparent a {
+	background-color:transparent;
+	color:white;	
+	border:3px solid white;
+}
+
+.pm-rounded-btn.transparent a:hover {
+	color:white;
+	border:3px solid #DBC164;
+	background-color:#DBC164;
+}
+
+.pm-rounded-btn a i {
+	font-family:'FontAwesome';
+	margin-left:5px;	
+}
+
+.pm-rounded-btn.animated a {
+	padding-left:22px;	
+}
+
+.pm-rounded-btn.animated i {
+	opacity:0;
+	margin-left:-3px;	
+	
+	transition:all 0.4s;
+	-moz-transition:all 0.4s;
+	-webkit-transition:all 0.4s;
+	-o-transition:all 0.4s;
+}
+
+.pm-rounded-btn.animated:hover i {
+	margin-left:7px;	
+	opacity:1;
+}
+/* Rounded button end */
+
+/* Square btn */
+.pm-square-btn {
+	min-width:100px;
+	padding:10px 25px;
+	border:3px solid white;
+	font-family:'Open sans';
+	font-size:14px;
+	font-weight:bold;
+	color:white !important;
+	text-align:center;
+	text-transform:uppercase;
+	margin:10px 0;
+	display:inline-block;
+	
+	@include transition(all, .4s);	
+}
+
+.pm-square-btn:hover {
+	background-color:white;
+	color:black !important;	
+}
+
+/* Btn extensions */
+.pm-square-btn.event {
+	line-height:26px !important;
+}
+
+.pm-square-btn.event:hover {
+	color:white !important;
+}
+
+.pm-square-btn.facebook {
+	border:3px solid #e1e1e1;
+	color:#c8c8c8 !important;
+	min-width:50px !important;
+	padding:10px 10px !important;
+	line-height:26px !important;
+}
+
+.pm-square-btn.facebook:hover {
+	background-color:$primaryColor;
+	color:white !important;
+	border:3px solid $primaryColor;
+}
+
+
+.pm-square-btn.news-post {
+	border: 3px solid #e1e1e1;
+    color: #c8c8c8 !important;
+    display: block;
+    margin: 20px auto 40px;
+    width: 150px;
+}
+
+.pm-square-btn.news-post:hover {
+	background-color:$primaryColor;
+	color:white !important;
+	border:3px solid $primaryColor;
+}
+
+.pm-square-btn.tag {
+	border: 3px solid #e1e1e1;
+    color: #c8c8c8 !important;
+    display: inline;
+    line-height: 48px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    padding: 10px 15px;
+}
+
+.pm-square-btn.tag:hover {
+	background-color:$primaryColor;
+	color:white !important;
+	border:3px solid $primaryColor;
+}
+
+.pm-square-btn.class-widget {
+    display: inline;
+    line-height: 48px;
+}
+
+.pm-square-btn.class-widget:hover {
+	color:white !important;
+}
+
+.pm-square-btn.store-btn {
+    color: #c8c8c8 !important;
+    display: table;
+    line-height: 48px;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+    text-align: center;
+}
+
+.pm-square-btn.store-btn:hover {
+	background-color:$primaryColor;
+	color:white !important;
+	border:3px solid $primaryColor;
+}
+
+.pm-square-btn.pm-cart-remove {
+    color: black !important;
+    display: table;
+    line-height: 48px;
+    margin: 5px auto 0 !important;
+    padding: 0 20px !important;
+    text-align: center;
+	border:none !important;
+	background-color:$primaryColor;
+	font-family:'Open sans' !important;
+}
+
+.pm-square-btn.pm-cart-remove:hover {
+	background-color:#999;
+	color:white !important;
+}
+
+.pm-square-btn.print {
+	border: 3px solid #e1e1e1;
+    color: #c8c8c8 !important;
+    width: 150px;
+	padding:10px 15px !important;
+}
+
+.pm-square-btn.print:hover {
+	background-color:$primaryColor;
+	color:white !important;
+	border:3px solid $primaryColor;
+}
+
+.pm-square-btn.woocomm, .single_add_to_cart_button {
+	border: 3px solid #e1e1e1;
+    color: #c8c8c8 !important;
+    display: inline;
+    line-height: 40px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    padding: 0px 15px !important;
+	background-color:transparent;
+	float:right;
+	margin-top:0px;
+	line-height:40px !important;
+	
+	@include transition(all, 0.4s);
+}
+
+.pm-square-btn.woocomm:hover {
+	background-color:$primaryColor;
+	color:white !important;
+	border:3px solid $primaryColor;
+}

@@ -1,0 +1,723 @@
+/* Contact form */
+.pm-contact-form-container {
+	width:auto;
+	height:auto;
+	overflow:hidden;	
+}
+
+
+.pm-required {
+	font-size:14px !important;	
+	text-transform:uppercase !important;
+	font-weight:300 !important;
+}
+
+.pm-form-textfield {
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom:3px solid white;
+	background-color:transparent;
+	padding:10px 13px;
+	width:100%;
+	margin-bottom:20px;
+	text-transform:uppercase;
+	color:white;
+	
+	@include borderRadiusAll(0px);
+	@include transition(all, .5s);
+}
+
+/*.pm-form-textfield.invalid_field {
+	border:1px solid red;	
+}*/
+
+.pm-form-textfield:focus, .pm-form-textarea:focus {
+	background-color:$primaryColor;
+	border-bottom:3px solid $primaryColor;
+	background-image:none;	
+	color:black;
+	text-transform:none;
+}
+
+.pm-form-textarea {
+	border-top:3px solid transparent;
+	border-left:3px solid transparent;
+	border-right:3px solid transparent;
+	border-bottom:3px solid white;
+	background-color:transparent;
+	padding:10px 13px;
+	width:100%;
+	margin-top:10px;
+	text-transform:uppercase;
+	min-height:150px;
+	color:white;
+	
+	@include borderRadiusAll(0px);
+	@include transition(all, .5s);
+}
+
+.pm-form-submit-btn {
+	min-width:100px;
+	padding:10px 25px;
+	border:3px solid white;
+	font-size:14px;
+	font-weight:bold;
+	color:white;
+	text-align:center;
+	text-transform:uppercase;
+	margin:10px 0;
+	display:inline-block;
+	background-color:transparent;
+	margin:20px auto;
+	display:block;
+	
+	@include transition(all, .4s);
+}
+
+.pm-form-submit-btn:hover {
+	background-color:white;
+	color:black;	
+}
+/* Contact form end */
+
+
+
+/* Global form elements */
+.pm-checkbox-input {
+	overflow:hidden;
+	margin-top:10px;
+}
+.pm-remember-checkbox {
+	float:left;
+	margin-right:8px !important;
+}
+
+.pm-checkbox-input p {
+	line-height:22px !important;	
+}
+
+.pm-textfield {
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom:3px solid #e1e1e1;
+	padding:15px 13px;
+	width:100%;
+	margin-top:10px;
+	background-color:transparent;
+	text-transform:uppercase;
+	
+	@include borderRadiusAll(0px);
+	@include transition(all, .4s);
+}
+
+.pm-textfield.invalid_field {
+	border:1px solid red;	
+}
+
+.pm-textfield:focus, .pm-textarea:focus {
+	background-color:$primaryColor;
+	border-bottom:3px solid $primaryColor;
+	background-image:none;	
+	color:black;
+	text-transform:none;
+}
+
+.pm-textarea {
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom:3px solid #e1e1e1;
+	font-size:14px;
+	padding:10px 13px;
+	width:100%;
+	margin-top:10px;
+	min-height:150px;
+	background-color:transparent;
+	text-transform:uppercase;
+	
+	@include transition(all, .4s);
+}
+
+select {
+	padding:15px 13px;
+	width:100%;
+	border:1px solid #e1e1e1;
+	margin-top:10px;
+	@include borderRadiusAll(0px);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #FFFFFF),
+		color-stop(0, #F7F7F7),
+		color-stop(1, #FFFFFF)
+	);
+	background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #F7F7F7 0%, #FFFFFF 100%);
+	background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #F7F7F7 0%, #FFFFFF 100%);
+	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #F7F7F7 0%, #FFFFFF 100%);
+	background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #F7F7F7 0%, #FFFFFF 100%);
+	background-image: linear-gradient(to bottom, #FFFFFF 0%, #F7F7F7 0%, #FFFFFF 100%);
+}
+
+select.invalid_field {
+	border:1px solid red;	
+}
+
+label {
+	font-size:14px;
+	color:#656565;	
+	font-weight:300;
+	margin-top:20px;
+	margin-bottom:0px;
+}
+/* Global form elements end */
+
+/* Rounded Form button */
+
+.pm-rounded-submit-btn, #place_order {
+	min-width:100px;
+	display:inline-block;
+	padding:12px 20px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:14px;
+	font-weight:bold;
+	color:white !important;
+	margin:10px 0px;
+	text-align:center;
+	border:0px solid white;
+	
+	@include borderRadiusAll(99px);
+	@include transition(all, 0.4s);
+}
+
+.pm-rounded-submit-btn:hover, #place_order:hover {
+	color:white;
+	background-color:#333 !important;
+}
+
+.pm-rounded-submit-btn.pm-primary {
+	background-color:#EF5438;
+}
+
+.pm-rounded-submit-btn.pm-secondary {
+	background-color:#44619d;
+}
+
+/* Rounded Form button end */
+
+/* Shopping cart form */
+
+/* Shopping cart form end */
+
+/* Checkout form */
+.pm-expandable-login-container {
+	width:auto;
+	height:auto;
+	overflow:hidden;	
+	border:1px solid #e0e0e0;
+	padding:20px;
+	margin-top:20px;
+	display:none;
+}
+.pm-form-checkbox-input {
+	display: inline-block;
+    margin-top: 20px !important;
+    width: 100%;
+}
+
+/* Checkout form end */
+
+/* Cart form */
+.pm-order-summary-container {
+    border: 1px solid #e0dede;
+    margin-bottom: 30px;
+	margin-top:20px;
+}
+
+.pm-order-summary {
+	padding:0px;
+	margin:0px;
+	list-style:none;	
+	overflow:hidden;
+}
+
+.pm-order-summary li:last-child {
+	border-bottom:0px solid #e0dede;	
+}
+
+.pm-order-summary li:before {
+	content:"";
+	padding:0;
+	margin:0;	
+}
+
+.pm-order-summary li {
+	overflow:hidden;
+	padding:20px 30px 10px 12px;	
+	border-bottom:1px solid #e0dede;
+}
+
+.pm-order-summary li .title {
+	float:left;
+	display:block;	
+	color:#333;
+    font-size: 14px;
+	text-transform:uppercase;
+	padding:0 10px;
+}
+
+.pm-order-summary li .label {
+	float:left;
+	display:block;	
+	color:#333;
+    font-size: 14px;
+	text-transform:uppercase;
+	margin-bottom:0px !important;
+}
+
+.pm-order-summary li .price {
+	float:right;
+	display:block;	
+    font-size: 14px;
+}
+/* Shopping cart form end */
+
+/* Payment options */
+.pm-payment-option-container {
+	background-color:#f2f2f2;
+	padding:20px;
+}
+
+/* Custom drop menu */
+.pm-dropdown {
+    min-width:120px;
+	margin-right:20px;
+}
+
+
+.pm-dropmenu {
+    cursor: pointer;
+    line-height: 1;
+    overflow: hidden;
+    position: relative;
+    width:100%;
+	background-color:transparent;
+	
+	@include transition(all, 0.3s);
+}
+
+.pm-dropmenu .pm-menu-title {
+    color:white;
+    font-weight: 500;
+	text-transform:uppercase;
+	font-size:12px;
+    margin:0;
+	text-align:left;
+}
+
+
+
+
+.pm-dropmenu .pm-selected {
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+.pm-dropmenu i {
+    color:$primaryColor;
+    position: absolute;
+    right: 10px;
+    top: 17%;
+}
+
+.pm-dropmenu-active {
+    display: none;
+    height: auto;
+    position: absolute;
+    min-width:120px;
+    z-index: 9999;
+	padding-top:8px;
+}
+
+.pm-dropmenu-active ul {
+    margin: 0;
+	padding: 0;
+	list-style:none;
+	border-top:2px solid #f6d600;
+	background-color:black;
+}
+
+.pm-dropmenu-active ul li:before {
+    content: "" !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.pm-dropmenu-active ul li:first-child {
+	margin-right:0px;	
+}
+
+.pm-dropmenu-active ul li {
+    text-align:left;
+	float:none;
+	margin-right:0px;
+	border-bottom: 1px solid #2d2d2c;
+	padding-top:0;
+	padding-bottom:0;
+	
+	@include transition(all, 0.4s);
+}
+
+.pm-language-selector-menu .pm-dropmenu-active ul li img {
+    float: left;
+    margin: 12px 8px 0;
+}
+
+.pm-dropmenu-active ul li:last-child {
+	border-bottom: 0px solid #2d2d2c;
+}
+
+.pm-dropmenu-active ul li:hover {
+	background-color:$primaryColor;	
+}
+
+.pm-dropmenu-active ul li:hover a {
+	color:black;	
+}
+
+.pm-dropmenu-active ul li a {
+    color: white !important;
+    display: block;
+    padding: 6px 15px;
+	text-decoration:none;
+}
+
+.pm-language-selector-menu .pm-dropmenu-active ul li a {
+	font-weight:300 !important;	
+	font-size:12px !important;
+}
+
+.pm-dropmenu-active ul li a.active {
+	font-weight:bold;	
+}
+
+
+
+/* Filter system extenstion */
+.pm-dropdown.pm-filter-system {
+	min-width:130px !important;	
+}
+
+.pm-filter-system li:first-child {
+	border-right: 0 solid #d3d3d3;	
+}
+
+.pm-dropdown.pm-filter-system .pm-dropmenu .pm-menu-title {
+    color:#c8c8c8 !important;
+    font-weight: bold!important;
+	text-transform:uppercase!important;
+	font-size:14px !important;
+    margin:0;
+	text-align:left;
+}
+
+.pm-dropdown.pm-filter-system .pm-dropmenu i {
+    color:#c8c8c8 !important;
+    position: absolute;
+    right:0px  !important;
+    top: 17% 
+}
+
+.pm-dropdown.pm-filter-system .pm-dropmenu-active ul {
+	border-top:none !important;
+}
+
+.pm-dropdown.pm-filter-system .pm-dropmenu-active ul li {
+	border-bottom: 1px solid #ddd !important;	
+}
+
+.pm-dropdown.pm-filter-system .pm-dropmenu-active ul li:first-child {
+	border-right:none !important;	
+}
+
+.pm-dropdown.pm-filter-system .pm-dropmenu-active ul li:last-child {
+	border-bottom:0px solid #ddd !important;	
+}
+
+/* Filter system extenstion end */
+
+.pm_s_security_code {
+    float: none;
+    width: 125px;
+}
+
+#pm-contact-form-response, #pm-trial-form-response {
+	margin:15px 0 25px;
+}
+
+.pm-form-textfield-with-icon {
+	border:1px solid #e1e1e1;
+	padding:11px 10px 10px 40px;
+	width:100%;
+	margin-top:10px;
+	position:relative;
+	
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #FFFFFF),
+		color-stop(0, #F7F7F7),
+		color-stop(1, #FFFFFF)
+	);
+	background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #F7F7F7 0%, #FFFFFF 100%);
+	background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #F7F7F7 0%, #FFFFFF 100%);
+	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #F7F7F7 0%, #FFFFFF 100%);
+	background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #F7F7F7 0%, #FFFFFF 100%);
+	background-image: linear-gradient(to bottom, #FFFFFF 0%, #F7F7F7 0%, #FFFFFF 100%);
+	
+	@include transition(all, 0.4s);
+}
+
+.pm-input-container {
+  position:relative;
+}
+
+.pm-input-container-icon {
+	color:#bfbfbf;
+    display:inline-block;
+    width: auto;
+    height: auto;
+    min-width: 16px;
+    padding: 4px 5px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: center;
+    position:absolute;
+    left:10px;
+    top:17px;
+    bottom:3px;
+    z-index:3;
+}
+
+/* Mailchimp widget */
+.pm-mailchimp-field {
+	text-transform:uppercase;
+	text-align:center;
+	width:93%;
+	color:white;
+	padding:20px 10px;
+	background-color:transparent;
+	border:1px solid #7c7c7d;
+	margin-bottom:20px;
+	@include borderRadiusAll(0px);
+	@include transition(all, 0.4s);
+}
+
+.pm-mailchimp-field.Dark {
+	color:#333;	
+}
+
+
+.pm-mailchimp-field:focus {
+	text-transform:none;
+}
+
+.pm-mailchimp-field.Light:focus {
+	color:white;
+}
+
+.pm-mailchimp-field.Dark:focus {
+	color:black;
+}
+
+
+.pm-mailchimp-submit {
+	width:200px;
+	background-color:$primaryColor;
+	text-transform:uppercase;
+	color:black !important;
+	font-size:14px;
+	font-weight:700;
+	padding:10px;
+	text-align:center;
+	border:none;
+	display:table;
+	margin:0 auto 20px auto;
+	font-family:'Open sans';
+	
+	@include transition(all, 0.4s);
+	@include borderRadiusAll(99px);	
+}
+
+.pm-mailchimp-submit:hover {
+	background-color:#999;
+	color:white !important;
+}
+
+
+
+/* Trial form */
+.pm-trial-form-field {
+	text-transform:uppercase;
+	text-align:center;
+	width:93%;
+	color:white;
+	padding:20px 10px;
+	background-color:transparent;
+	border:1px solid #7c7c7d;
+	margin-bottom:20px;
+	@include borderRadiusAll(0px);	
+}
+
+.pm-trial-form-field:focus {
+	text-transform:none;	
+}
+
+.pm-trial-form-submit {
+	width:200px;
+	background-color:$primaryColor;
+	text-transform:uppercase;
+	color:black;
+	font-size:14px;
+	font-weight:700;
+	padding:10px;
+	text-align:center;
+	border:none;
+	display:table;
+	margin:0 auto 20px auto;
+	font-family:'Open sans';
+	
+	@include transition(all, 0.4s);
+	@include borderRadiusAll(99px);	
+}
+
+.pm-trial-form-submit:hover {
+	background-color:#999;
+	color:white;
+}
+
+.pm-trial-form-textarea {
+	text-transform:uppercase;
+	text-align:center;
+	width:93%;
+	color:white;
+	padding:20px 10px;
+	background-color:transparent;
+	border:1px solid #7c7c7d;
+	margin-bottom:20px;
+	height:140px;
+}
+
+.pm-trial-form-textarea:focus {
+	text-transform:none;	
+}
+
+/* Widget - Quick contact form */
+.pm_quickcontact_widget {
+	overflow:hidden;	
+}
+
+.pm_quick_contact_field {
+	text-transform:uppercase;
+	text-align:center;
+	width:90%;
+	color:white;
+	padding:20px 10px;
+	background-color:transparent;
+	border:1px solid #7c7c7d;
+	margin-bottom:20px;
+	@include borderRadiusAll(0px);
+	@include transition(all, 0.4s);
+}
+
+.pm_quick_contact_field.Dark {
+	color:#333;		
+}
+
+.pm_quick_contact_field:focus, .pm_quick_contact_textarea:focus {
+	text-transform:none;
+}
+
+.pm_quick_contact_field.Light:focus, .pm_quick_contact_textarea.Light:focus {
+	color:white;	
+}
+
+.pm_quick_contact_field.Dark:focus, .pm_quick_contact_textarea.Dark:focus {
+	color:black;	
+}
+
+
+.pm_quick_contact_textarea {
+	text-transform:uppercase;
+	text-align:center;
+	width:90%;
+	color:white;
+	padding:20px 10px;
+	background-color:transparent;
+	border:1px solid #7c7c7d;
+	margin-bottom:20px;
+	@include borderRadiusAll(0px);
+	@include transition(all, 0.4s);
+}
+
+.pm_quick_contact_textarea.Dark {
+	color:#333;	
+}
+
+.pm_quick_contact_submit {
+    width:200px;
+	background-color:$primaryColor;
+	text-transform:uppercase;
+	color:black !important;
+	font-size:14px;
+	font-weight:700;
+	padding:10px;
+	text-align:center;
+	border:none;
+	display:table;
+	margin:0 auto 20px auto;
+	
+	@include transition(all, 0.4s);
+	@include borderRadiusAll(99px);	
+	
+}
+
+.pm_quick_contact_submit:hover {
+	background-color:#999;
+	color:white !important;
+}
+
+.pm_form_response {
+	text-align:center;	
+	@include transition(all, 0.3s);
+}
+
+.pm_form_response.Dark {
+    color:#333;
+    font-size: 12px;
+    margin-top: 7px;
+    width: auto;
+}
+
+.pm_form_response.Light {
+    color:white;
+    font-size: 12px;
+    margin-top: 2px;
+    width: auto;
+}
+
+.pm-widget-footer .pm_mailchimp_widget a:hover, .pm-widget-footer .pm-gallery-widget-view-more:hover {
+	color:white !important;	
+}
